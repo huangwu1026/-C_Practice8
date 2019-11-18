@@ -1,8 +1,8 @@
-//µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖÇóµÚn¸öì³²¨ÄÇÆõÊı
+//é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°æ±‚ç¬¬nä¸ªæ–æ³¢é‚£å¥‘æ•°
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
-   //µİ¹é
+   //é€’å½’
 int fib(int n){
 	if (n == 1 || n == 2){
 		return 1;
@@ -10,7 +10,7 @@ int fib(int n){
 	else
 		return fib(n - 1) + fib(n - 2);
 }
-   //·Çµİ¹é
+   //éé€’å½’
 int fib(int n){
 	int num1 = 1, num2 = 2, result;
 	if (n == 1 || n == 2){
@@ -25,13 +25,13 @@ int fib(int n){
 }
 int main(){
 	int n;
-	printf("ÇëÊäÈëÄúÏëÒªÇóµÄì³²¨ÄÇÆõÊı:");
+	printf("è¯·è¾“å…¥æ‚¨æƒ³è¦æ±‚çš„æ–æ³¢é‚£å¥‘æ•°:");
 	scanf("%d", &n);
-	printf("µÚ%d¸öì³²¨ÄÇÆõÊıÊÇ%d\n", n, fib(n));
+	printf("ç¬¬%dä¸ªæ–æ³¢é‚£å¥‘æ•°æ˜¯%d\n", n, fib(n));
 	system("pause");
 	return 0;
 }
-//±àĞ´Ò»¸öº¯ÊıÊµÏÖn^k,Ê¹ÓÃµİ¹éÊµÏÖ
+//ç¼–å†™ä¸€ä¸ªå‡½æ•°å®ç°n^k,ä½¿ç”¨é€’å½’å®ç°
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
@@ -50,7 +50,7 @@ int main(){
 	system("pause");
 	return 0;
 }
-//Ğ´Ò»¸öµİ¹éº¯ÊıDigitSum(n),ÊäÈëÒ»¸ö·Ç¸ºÕûÊı£¬·µ»Ø×é³ÉËüµÄÊı×ÖÖ®ºÍ£¬ÁĞÈç£¬µ÷ÓÃDigitSum(1792),ÔòÓ¦¸Ã·µ»Ø1+7+2+9£¬ËüµÄºÍÊÇ19
+//å†™ä¸€ä¸ªé€’å½’å‡½æ•°DigitSum(n),è¾“å…¥ä¸€ä¸ªéè´Ÿæ•´æ•°ï¼Œè¿”å›ç»„æˆå®ƒçš„æ•°å­—ä¹‹å’Œï¼Œåˆ—å¦‚ï¼Œè°ƒç”¨DigitSum(1792),åˆ™åº”è¯¥è¿”å›1+7+2+9ï¼Œå®ƒçš„å’Œæ˜¯19
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
@@ -68,9 +68,9 @@ int main(){
 	system("pause");
 	return 0;
 }
-//±àĞ´Ò»¸öº¯Êıreverse_string(char*string)(µİ¹éÊµÏÖ)
-   //ÊµÏÖ:½«²ÎÊı×Ö·û´®µÄ×Ö·û·´ÏòÅÅÁĞ
-   //ÒªÇó : ²»ÄÜÊ¹ÓÃCº¯Êı¿âÖĞµÄ×Ö·û´®²Ù×÷º¯Êı
+//ç¼–å†™ä¸€ä¸ªå‡½æ•°reverse_string(char*string)(é€’å½’å®ç°)
+   //å®ç°:å°†å‚æ•°å­—ç¬¦ä¸²çš„å­—ç¬¦åå‘æ’åˆ—
+   //è¦æ±‚ : ä¸èƒ½ä½¿ç”¨Cå‡½æ•°åº“ä¸­çš„å­—ç¬¦ä¸²æ“ä½œå‡½æ•°
 #include<stdio.h>
 #include<stdlib.h>
 void reverse_string(char*string){
@@ -86,17 +86,17 @@ int main(){
 	system("pause");
 	return 0;
 }
-//µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖstrlen
+//é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°strlen
 #include<stdio.h>
 #include<stdlib.h>
-   //µİ¹é
+   //é€’å½’
 int strlen(char* string){
 	if (*string == '\0'){
 		return 0;
 	}
 	return strlen(string + 1) + 1;
 }
-   //·Çµİ¹é
+   //éé€’å½’
 int strlen(char* string){
 	int count = 0;
 	while (*string != '\0'){
@@ -112,11 +112,11 @@ int main(){
 	system("pause");
 	return 0;
 }
-//µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖnµÄ½×³Ë
+//é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°nçš„é˜¶ä¹˜
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
-   //µİ¹é
+   //é€’å½’
 int fac(int n){
 	int f;
 	if (n < 0){
@@ -128,7 +128,7 @@ int fac(int n){
 	else f = fac(n - 1)*n;
 	return f;
 }
-   //·Çµİ¹é
+   //éé€’å½’
 int fac(int n){
 	int result = 1;
 	for (int i = 1; i <= n; i++){
@@ -144,7 +144,7 @@ int main(){
 	system("pause");
 	return 0;
 }
-//µİ¹é·½Ê½ÊµÏÖ´òÓ¡Ò»¸öÕûÊıµÄÃ¿Ò»Î»
+//é€’å½’æ–¹å¼å®ç°æ‰“å°ä¸€ä¸ªæ•´æ•°çš„æ¯ä¸€ä½
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
